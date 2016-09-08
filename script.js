@@ -18,7 +18,7 @@ function displayLocation(position) {
   locations.push(googleLoc);
 
   var pLocation = document.getElementById("location");
-  pLocation.innerHTML += "Latitude: " + latitude + ", Longitude: " + longitude + "Accuracy: " + accuracy + "<br>";
+  pLocation.innerHTML += "Latitude: " + latitude + ", Longitude: " + longitude + " Accuracy: " + accuracy + "<br>";
 }
 
 function displayError(error) {
