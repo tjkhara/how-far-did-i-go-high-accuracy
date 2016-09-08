@@ -10,6 +10,7 @@ var options = {
 function displayLocation(position) {
   var latitude = position.coords.latitude;
   var longitude = position.coords.longitude;
+  var accuracy = position.coords.accuracy;
 
   var googleLoc = new google.maps.LatLng(
     position.coords.latitude,
@@ -17,7 +18,7 @@ function displayLocation(position) {
   locations.push(googleLoc);
 
   var pLocation = document.getElementById("location");
-  pLocation.innerHTML += latitude + ", " + longitude + "<br>";
+  pLocation.innerHTML += "Latitude: " + latitude + ", Longitude: " + longitude + "Accuracy: " + accuracy + "<br>";
 }
 
 function displayError(error) {
